@@ -1,0 +1,17 @@
+﻿Scaffold-DbContext "Server=ELDSQL02t;Database=ELD_PRODUCTION_NXT;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/ELD/Prod -Tables eld_Users,BROKER_CONTACT,BROKER_LICENSE,BROKER_MASTER,WebQuoteUsers,SS_Permission,SS_EldUser_Role,SS_Role,SS_Role_Permission,ACCT_MASTER,ACCT_TRANS,AR_TRANS,CLM_MASTER,CLM_TRANS,INSURED_INFO,lkpSUBMISSION_STATUS -Force
+
+Affiliate-Info ELD Script
+Scaffold-DbContext "Server=ELDSQL02t;Database=ELD_PRODUCTION_NYS;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/ELD/Prod1 -Tables Table1,Table2 -Force
+Scaffold-DbContext "Server=ELDSQL02t;Database=ELD_PRODUCTION_NYS;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/ELD/Prod1 -Tables ACCT_MASTER,ACCT_TRANS,AdditionalEntity,AdditionalEntityOwner,AR_TRANS,AutoBlankFillInRules,BROKER_CONTACT,BROKER_LICENSE,BROKER_MASTER,CLM_MASTER,CorpOwner,eld_Department,eld_refGroup,eld_Users,INSURED_INFO,lkpSUBMISSION_STATUS,SS_EldUser_Role,SS_Permission,SS_Role,SS_Role_Permission,undFORM_BLANKS,undFORM_TRANS,und_lkpCoverageType,WebQuoteUsers -Force
+
+Endorsement ELD Script
+Scaffold-DbContext "Server=ELDSQL02t;Database=ELD_PRODUCTION_NYS;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/ELD/Prod1 -Tables undFORM_TRANS,undFORM_BLANKS -Force
+
+PLD Script
+Scaffold-DbContext "Server=ELDSQL02t;Database=PLD_PRODUCTION;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/PLD/Prod -Tables BR_MERGE,BROKER_AGENT,BROKER_CONTACT,BROKER_LICENSE,BROKER_MASTER,eld_Users,IDENTITY_VALUES,log4netERROR_LOG,NON_IDENTITY_VALUES,WebQuoteUserPreference,WebQuoteUsers,lkp_State_Region,SS_EldUser_Role,SS_Permission,SS_Role,SS_Role_Permission -Force
+
+ACCT_MASTER,ACCT_TRANS,AR_TRANS,BROKER_CONTACT,BROKER_LICENSE,BROKER_MASTER,CLM_MASTER,eld_Department,eld_refGroup,eld_Users,GeoCodes,INSURED_INFO,lkpSUBMISSION_STATUS,log4netERROR_LOG,SS_EldUser_Role,SS_Permission,SS_Role,SS_Role_Permission,und_lkpCoverageType,WebQuoteUsers -Force
+
+Scaffold-DbContext "Server=ELDSQL02t;Database=ELD_PRODUCTION_NXP;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/ELD/Prod31 -Tables ACCT_MASTER,ACCT_TRANS,AR_TRANS,BROKER_CONTACT,BROKER_LICENSE,BROKER_MASTER,CLM_MASTER,eld_Department,eld_refGroup,eld_Users,GeoCodes,INSURED_INFO,lkpSUBMISSION_STATUS,log4netERROR_LOG,SS_EldUser_Role,SS_Permission,SS_Role,SS_Role_Permission,und_lkpCoverageType,WebQuoteUsers -Force
+Scaffold-DbContext "Server=ELDSQL02t;Database=ELD_PRODUCTION_NYS;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/ELD/Prod31 -Tables undFORM_VERSION -Force
+
